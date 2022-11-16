@@ -1,0 +1,219 @@
+/* <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+   */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+*{
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+.background{
+    background-image: url("images/bg-main-mobile.png");
+    min-height: 45vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.card-back{
+    position: absolute;
+    width: 400px;
+    /* left: 40%; */
+    right: 0;
+    top: 5%;
+}
+
+.bg-card-back{
+    width: 70%;
+}
+
+.card-back span{
+    position: relative;
+    right: 15%;
+    bottom: 72px;
+    color: white;
+    font-family: sans-serif;
+}
+
+.card-front{
+    background-image: url("images/bg-card-front.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    height: 153.453px;
+    top: 20%;
+    left: 10%;
+    width: 280px;
+    z-index: 2;
+    padding: 15px;
+}
+
+.card-logo{
+    width: 60px;
+}
+
+.details{
+    position: relative;
+    top: 25px;
+    color: white;
+    font-family: sans-serif;
+}
+
+.name{
+    margin-right: 115px;
+    text-transform: uppercase;
+    font-size: 10px;
+}
+
+.date{
+    font-size: 12px;
+}
+
+.number{
+    margin: 0 auto 15px;
+    width: 100vw;
+    letter-spacing: 1.5px;
+    font-size: 20px;
+    font-family: sans-serif;
+    position: relative;
+    left: 8px;
+}
+
+section{
+    padding: 70px 8% 0;
+}
+
+/* #uncompleted-class{
+    /* display: none; 
+} */
+
+label{
+    display: block;
+    text-transform: uppercase;
+    font-size: 15px;
+    margin: 15px auto 5px;
+    color: hsl(278, 68%, 11%);
+}
+
+input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 0.5px solid;
+}
+
+input:hover{
+    border-color: hsl(249, 99%, 64%) ;
+    cursor: pointer;
+}
+
+button{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px auto 0;
+    color: white;
+    background-color:  hsl(278, 68%, 11%);
+    font-size: 17px;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.bottom-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.bottom-div span{
+    padding-right: 10px;
+}
+
+#completed-state{
+    text-align: center;
+    display: none;
+}
+
+#completed-state img{
+    margin: 15px auto 25px;
+}
+
+h1{
+    text-transform: uppercase;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    font-size: 2rem;
+    font-weight: 200;
+}
+
+#completed-state p{
+    font-family: sans-serif;
+    letter-spacing: 1.2px;
+    color: hsl(279, 6%, 55%);
+    margin-bottom: 15px;
+}
+
+.expdate{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.error{
+    margin: 5px auto 10px;
+    color: hsl(0, 100%, 66%);
+    font-size: 14px;
+}
+
+@media (min-width: 970px) {
+    .background{
+        background-image: url(images/bg-main-desktop.png);
+        height: 100vh;
+        width: 30vw;
+    }
+
+    main{
+        display: flex;
+        flex-direction: row;
+    }
+
+    section{
+        margin: 80px 150px;
+
+    }
+
+    .card-front{
+        left: 13%;
+        top: 25%;
+    }
+
+    .card-back{
+        left: 18%;
+        top: 350px;
+    }
+
+    #uncompleted-class{
+        padding: 0 30px;
+    }
+
+    #completed-state{
+        text-align: center;
+        display: none;
+    }
+
+}

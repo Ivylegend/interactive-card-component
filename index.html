@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Interactive card details form</title>
+  </head>
+
+  <body>
+    <main>
+      <div class="background"></div>
+      <div class="container">
+        <div class="card-front">
+          <img class="card-logo" src="images/card-logo.svg" alt="" />
+          <div class="details">
+            <p class="number">0000 0000 0000 0000</p>
+            <span class="name"> Jane Appleseed</span>
+            <span class="date">
+              <span class="card-month">00</span> /
+              <span class="card-year">00</span></span
+            >
+          </div>
+        </div>
+
+        <div class="card-back">
+          <img class="bg-card-back" src="images/bg-card-back.png" alt="" />
+          <span class="cvv"> 000</span>
+        </div>
+
+        <section>
+          <div id="uncompleted-class">
+            <form>
+              <label for="card-name"> Cardholder Name</label>
+              <input
+                type="text"
+                placeholder="e.g. Jane Appleseed"
+                id="card-name"
+              />
+              <div class="error name-err"></div>
+              <label for="card-number"> Card Number</label>
+              <input
+                type="number"
+                placeholder="e.g. 1234 5678 9123 0000"
+                id="card-number"
+              />
+              <div class="error number-err"></div>
+              <div class="bottom-div">
+                <span class="expdate">
+                  <span>
+                    <label for=""> Exp. Date </label>
+                    <input type="number" placeholder="MM" id="mm" />
+                    <div class="error expdate-err"></div>
+                  </span>
+                  <span>
+                    <label for="">(MM/YY)</label>
+                    <input type="number" placeholder="YY" id="yy" />
+                    <div class="error mmyy-err"></div>
+                  </span>
+                </span>
+                <span>
+                  <label for="cvc">CVC</label>
+                  <input type="number" placeholder="e.g. 123" id="cvc" />
+                  <div class="error cvc-err"></div>
+                </span>
+              </div>
+              <button class="button-one" type="submit">Confirm</button>
+            </form>
+          </div>
+          <!-- Completed state start -->
+
+          <div id="completed-state">
+            <img src="images/icon-complete.svg" alt="" />
+            <h1>Thank you!</h1>
+            <p>We've added your card details</p>
+            <button class="button-two" type="submit">Continue</button>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- <script src="script.js"></script> -->
+    <script src="new.js"></script>
+    <!-- <script src="index.js"></script> -->
+    <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  </body>
+</html>
